@@ -1,29 +1,28 @@
 import json
-import os
-from src.menu import Menu
+from src.render.menu import Menu
 
-os.chdir('./Load')
+archivePath = __file__[0 : len(__file__) - 10] + 'saves.json'
 
 def save(level):
 
-    archive = open('saves.json', 'r')
+    archive = open(archivePath, 'r')
 
     saves = json.load(archive)
     saves.append(level)
 
     archive.close()
 
-    archive = open('saves.json', 'w')
+    archive = open(archivePath, 'w')
     json.dump(saves, archive)
     
 
 def load():
 
-    archive = open('saves.json', 'r')
+    archive = open(archivePath, 'r')
     MenuList = list(json.load(archive))
 
     [str(x) for x in MenuList]
         
-    return Menu.RenderMenu.renderRandomMenu(MenuList, 'Loads')
+    return MenuList
 
 
