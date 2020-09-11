@@ -2,6 +2,6 @@
     ["New Game", "Load Game" ,"Multiplayer", "About", "Exit"], 
     ["Easy", "Medium", "Hard"] ,
     ["England", "Germany", "USA", "Japan", "French", "Italy", "Soviet Union"], 
-    ["Attach", "Defense", "Resources"]
+    ["Attach", "Defense", "Resources", "Save and exit"]
 ]
 

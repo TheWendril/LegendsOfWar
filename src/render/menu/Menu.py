@@ -4,8 +4,6 @@ import os
 
 archivePath = __file__[0 : len(__file__)  - 7] + 'menuLayout.json'
 
-print(archivePath)
-
 class RenderMenu:
     
     def __init__(self):
@@ -28,9 +26,9 @@ class RenderMenu:
         mainMenu = TerminalMenu(self.MenuList[2], title = 'Choose Your Country')
         return mainMenu.show()
 
-    def renderOptionsPlayer():
+    def renderPlayerOptions(self):
         
-        mainMenu = TerminalMenu(self.MenuList[3], title = 'Choose Your Country')
+        mainMenu = TerminalMenu(self.MenuList[3])
         return mainMenu.show()
 
 
