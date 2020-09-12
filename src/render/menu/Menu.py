@@ -13,7 +13,7 @@ class RenderMenu:
 
     def renderMainMenu(self):
             
-        mainMenu = TerminalMenu(self.MenuList[0], title = 'Legends of War')
+        mainMenu = TerminalMenu(self.MenuList[0], title = '\nLegends of War\n')
         return mainMenu.show()
 
     def renderDifficultyMenu(self):
@@ -30,7 +30,6 @@ class RenderMenu:
         
         mainMenu = TerminalMenu(self.MenuList[3])
         return mainMenu.show()
-
 
     @staticmethod
 

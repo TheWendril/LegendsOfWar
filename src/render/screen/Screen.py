@@ -14,9 +14,9 @@ class TerminalScreen:
 
 Life: {Country1.Life}                                                   Life: {Country2.Life}
 Money: {Country1.Money}                                                 Money: {Country2.Money}        
-Soldiers:  
-AirPlanes:
-Ships:
+Soldiers: {Country1.Army.armyStatus()['Soldiers']} 
+AirPlanes: {Country1.Army.armyStatus()['Airplanes']}
+Ships: {Country1.Army.armyStatus()['Ships']}
 
 
 
