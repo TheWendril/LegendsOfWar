@@ -3,11 +3,11 @@ from .power import Power
 class army:
 
 
-    def __init__(self, SPrice, AirPrice, SHPrice):
+    def __init__(self, SPrice, AirPrice, SHPrice, Soldiers = 0, Ships = 0, Airplanes = 0):
 
-        self.Soldiers = 0
-        self.Ships = 0
-        self.Airplanes = 0
+        self.Soldiers = Soldiers
+        self.Ships = Ships
+        self.Airplanes = Airplanes
 
         self.armyPower = Power()
 

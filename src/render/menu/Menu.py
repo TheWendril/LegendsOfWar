@@ -31,6 +31,9 @@ class RenderMenu:
         mainMenu = TerminalMenu(self.MenuList[3])
         return mainMenu.show()
 
+    def renderExit():
+        mainMenu = TerminalMenu(self.MenuList[4])
+
     @staticmethod
 
     def renderRandomMenu(MenuList, MenuTitle):

@@ -4,14 +4,14 @@ class Power:
         
         self.SOPower = 1
         self.AIRpower = 4
-        self.SHPower = 8
+        self.SHPower = 9
 
 
     def setPower(self ,Solpercent, Airpercent, SHpercernt):
 
-        self.SOPower *= Solpercent / 100
-        self.SHPower *= SHpercernt / 100
-        self.AIRpower *= Airpercent / 100
+        self.SOPower += self.SOPower * (Solpercent / 100)
+        self.SHPower += self.SOPower * (SHpercernt / 100)
+        self.AIRpower += self.SOPower * (Airpercent / 100)
  
 
     def getArmyPower(self):
